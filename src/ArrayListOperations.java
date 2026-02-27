@@ -7,7 +7,7 @@ public class ArrayListOperations {
         Scanner sc = new Scanner(System.in);
 
         int N = sc.nextInt();
-        sc.nextLine(); // consume newline
+        sc.nextLine();
 
         ArrayList<String> items = new ArrayList<>();
 
@@ -18,13 +18,10 @@ public class ArrayListOperations {
 
         String searchItem = sc.nextLine();
 
-        // Sort the list alphabetically
         Collections.sort(items);
 
-        // Print sorted list
         System.out.println("Sorted Items: " + items);
 
-        // Check if item exists
         if (items.contains(searchItem)) {
             System.out.println("Found");
         } else {
